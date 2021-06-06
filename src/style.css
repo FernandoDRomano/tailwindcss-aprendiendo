@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+/*
+    @aply
+*/
+
+.btn{
+    @apply bg-yellow-500 text-gray-700 px-6 py-2 rounded-lg uppercase tracking-wider hover:bg-yellow-900 hover:text-white;
+}
+
+@tailwind utilities;
