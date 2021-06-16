@@ -4,7 +4,7 @@
   "description": "Probando Tailwind Css",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/style.css --output css/style.css",
+    "build": "NODE_ENV=production postcss src/style.css --output css/style.css",
     "watch": "postcss src/style.css --output css/style.css --watch"
   },
   "keywords": [
@@ -13,12 +13,13 @@
   "author": "Fernando Daniel Romano",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.0",
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.4",
     "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
     "tailwindcss": "^2.1.2"
   },
-  "dependencies": {
-    "@tailwindcss/forms": "^0.3.3"
-  }
+  "dependencies": {}
 }
