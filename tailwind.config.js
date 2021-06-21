@@ -7,6 +7,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      rotate:{
+        '360': '360deg'
+      },
       width: {
         '520': '520px',
       }, 
@@ -41,6 +44,14 @@ module.exports = {
     extend: {
       backgroundColor: ['active'],
       fontWeight: ['active'],
+      scale: ['group-hover'],
+      rotate: ['group-hover'],
+      fill: ['hover', 'focus'],
+      blur: ['hover', 'focus'],
+      grayscale: ['hover', 'focus'],
+      height: ['hover', 'focus'],
+      translate: ['group-hover'],
+      margin: ['group-hover'],
     },
   },
   plugins: [
